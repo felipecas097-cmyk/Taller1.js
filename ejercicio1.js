@@ -13,3 +13,7 @@ let suma = numero1 + numero2;
 
 // Imprimir la suma en la consola
 console.log("La suma de los dos números es: " + suma);
+
+//solucion al ejercicio del profe
+//const numero1 =  prompt ('Ingresar primer numero'));
+//const numero2 =  prompt('ingresar el segundo numero'));
