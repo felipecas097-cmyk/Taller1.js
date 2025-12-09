@@ -15,6 +15,3 @@ if (numero % 5 == 0) {
   console.log('No, el número ' + numero + ' no es múltiplo de 5');
 }
 
-
-//solucion profe:
-//

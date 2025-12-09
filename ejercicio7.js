@@ -1,9 +1,21 @@
-let NUmero1 = Number(prompt( 'digite numero donde va a iniciar el rango'));
-let NUmero2 = Number(prompt('digite numero donde va a iniciar el rango'));
+let numero1 = Number(prompt("Digite el número donde va a iniciar el rango"));
+let numero2 = Number(prompt("Digite el número donde va a finalizar el rango"));
 
-if( NUmero1 > NUmero2) {
-    for (let i = NUmero1; i >= NUmero2; i--){
-        const element = array[i];
-NUmero1       
+// Si el primer número es menor que el segundo → imprimir hacia arriba
+if (numero1 < numero2) {
+    for (let i = numero1; i <= numero2; i++) {
+        console.log(i);
     }
+}
+
+// Si el primer número es mayor que el segundo → imprimir hacia abajo
+else if (numero1 > numero2) {
+    for (let i = numero1; i >= numero2; i--) {
+        console.log(i);
+    }
+}
+
+// Si son iguales → solo imprime una vez
+else {
+    console.log(numero1);
 }

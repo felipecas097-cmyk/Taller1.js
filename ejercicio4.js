@@ -1,12 +1,20 @@
-let Numero1 = parseInt ( prompt('ingresa el numero '));
-let mensaje = '';
+// Pedir al usuario ingresar un número
+let numero = prompt("Ingresa un número:");
 
-if( Numero1 % 3 == 0 ) {
-    mensaje += 'bing';    //mensaje = mensaje + 'bing'
-}
-if( Numero1 % 5 == 0) {
-    mensaje += 'bong';
-}
+// Convertir el valor a número
+numero = Number(numero);
 
-if( ! mensaje )
-    console.log( Numero1);
+// Verificar las condiciones en orden
+if (numero % 3 === 0 && numero % 5 === 0) {
+    // Múltiplo de ambos: imprimir bingbong
+    console.log("bingbong");
+} else if (numero % 3 === 0) {
+    // Múltiplo solo de 3: imprimir bing
+    console.log("bing");
+} else if (numero % 5 === 0) {
+    // Múltiplo solo de 5: imprimir bong
+    console.log("bong");
+} else {
+    // No es múltiplo de ninguno: imprimir el número
+    console.log(numero);
+}
